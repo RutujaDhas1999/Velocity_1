@@ -12,7 +12,7 @@ docker run hello-world
 docker ps
 docker container ls
 docker container ls -a
-docker container rm b6b5fae61c23
+docker container rm (Container ID)
 docker run hello-world
 docker container ls -a
 docker system prune -f -a
