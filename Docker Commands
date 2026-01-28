@@ -1,0 +1,19 @@
+yum install docker -y
+docker -v
+service docker start
+start docker.service
+service docker status
+docker pull hello-world
+docker pull hello-world:linux
+docker image ls
+docker rmi hello-world
+docker rmi hello-world:linux
+docker run hello-world
+docker ps
+docker container ls
+docker container ls -a
+docker container rm b6b5fae61c23
+docker run hello-world
+docker container ls -a
+docker system prune -f -a
+docker container ls -a
