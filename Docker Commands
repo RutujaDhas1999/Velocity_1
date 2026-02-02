@@ -1,3 +1,5 @@
+Day 1 Commands
+
 yum install docker -y
 docker -v
 service docker start
