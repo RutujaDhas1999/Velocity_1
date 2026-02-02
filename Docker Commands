@@ -153,3 +153,39 @@ docker ps -a
    66  docker cp index.html R1:/usr/local/apache2/htdocs
    67  docker cp index.html R2:/usr/local/apache2/htdocs
    68  docker cp index.html R3:/usr/local/apache2/htdocs
+
+
+
+docker volume ls
+   72  docker volume create
+   73  docker volume create Rutuja
+   74  docker volume rm Rutuja
+   75  docker volume create Rutuja
+   76  docker run -itdv Rutuja:/mnt ubuntu bash
+   77*
+   78  docker run -itdv Rutuja:/mnt ubuntu bash
+   79  docker volume ls
+   80  docker ps
+   81  clear
+   82  docker volume ls
+   83  docker run -itdv Velocity:/mnt --V1 ubuntu bash
+   84  docker run -itdv Velocity:/mnt --name V1 ubuntu bash
+   85  cd /var/lib/docker/volumes/Velocity/_data/
+   86  ll
+   87  ls -ltr
+   88  cd
+   89  cd /mnt
+   90  ll
+   91  cd
+   92  cd /var/lib/docker/volumes/
+   93  ll
+   94  cd Velocity/
+   95  ll
+   96  cd _data/
+   97  ll
+   98  vi index.html
+   99  vi dev.html
+  100  ls -ltr
+  101  pwd
+  102  cd
+  103  docker run -dp 80:80 -v Velocity:/usr/local/apache2/htdocs --name H1 httpd
