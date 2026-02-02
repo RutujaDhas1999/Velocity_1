@@ -38,3 +38,46 @@ docker ps -a
 docker container ls -a
 docker container rm 33e3afaa2508
 docker system prune -a -f
+
+
+
+ocker pull ubuntu
+   23  docker ps -a
+   24  docker run ubuntu
+   25  docker ps -a
+   26  docker run -it ubuntu bash
+   27  docker ps -a
+   28  docker start debc30eb0cd5
+   29  docker ps -a
+
+   37  docker start debc30eb0cd5
+   38  docker attach gallant_wilson
+   39  docker -it debc30eb0cd5
+   40  docker ps -a
+   41  docker stop debc30eb0cd5
+   42  docker start d76404e1562f
+   43  docker ps -a
+   44  docker stop d76404e1562f
+   45  docker start d76404e1562f
+   46  docker ps -a
+   47  docker inspect d76404e1562f
+   48  clear
+   49  docker ps -a
+   50  docker run ubuntu
+   51  docker run -it ubuntu bash
+   52  docker ps -a
+   53  docker run ubuntu
+   54  docker ps -a
+   55  docker start 67e1aac2ff7c 6963fa99f334 d4196b272c55 58ced988b228 debc30eb0cd5
+   56  docker ps -a
+   57  docker run ubuntu determined_aryabhata
+   58  docker run ubuntu whoami
+   59  docker ps -a
+   62  docker system  prune -a -f
+   63  docker ps -a
+   64  docker kill 3230529a9df2 d76404e1562f
+   65  docker rm d76404e1562f 3230529a9df2
+   66  docker run -it ubuntu bash
+   67  docker ps -a
+   69  docker inspect 3562ac029521 | grep IPA
+docker stats
