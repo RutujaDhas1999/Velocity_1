@@ -83,3 +83,73 @@ ocker pull ubuntu
    67  docker ps -a
    69  docker inspect 3562ac029521 | grep IPA
 docker stats
+
+
+
+docker ps -a
+    3  docker commit ajay testubuntu:1.0
+    4  docker commit Ajay testubuntu:1.0
+    5  docker image ls
+    6  docker login
+    7  docker push rohitbavadekar/testubuntu:1.0
+    8  docker image
+    9  docker images
+   10  docker container ls
+   11  docker commit Ajay rohitbavadekar/testubuntu:1.0
+   12  docker push rohitbavadekar/testubuntu:1.0
+   13  docker images
+   14  docker kill Ajay
+   15  docker rm Ajay
+   16  docker images
+   17  docker system prune -a -f
+   18  docker images
+   19  docker pull testubuntu
+   20  clear
+   21  docker login
+   22  docker pull testubuntu:1.0
+   23  docker pull rohitbavadekar/testubuntu:1.0
+   24  docker run -it rohitbavadekar/testubuntu:1.0
+   25  clear
+   26  docker container ls
+   27  cd /var/lib/docker
+   28  ll
+   29  cd containers/
+   30  ll
+   31  cd 46158b0b55b0d862f66358b47acc1ec8df38f95c22efd50468194bdecb8fc124/
+   32  ll
+   33  cd mounts/
+   34  ll
+   35  cd ..
+   36  cd checkpoints/
+   37  ll
+   38  ls -ltr
+   39  cd ..
+   40  cd volumes/
+   41  ll
+   42  cd ..
+   43  ll
+   44  pwd
+   45  cd volumes/
+   46  ll'
+   47  ll
+   48  cd
+   49  clear
+   50  docker container ls
+   51  docker inspect 46158b0b55b0
+   52  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+   53  cd /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+   54  cd /usr/local/sbin/
+   55  ll
+   56  clear
+   57  cd
+   58  docker run -dp 8080:80 --name R1 httpd
+   59  docker run -dp 8090:80 --name R2 httpd
+   60  docker run -dp 90:80 --name R3 httpd
+   61  docker ps
+   62  vi index.html
+   63  rm -rf index.html
+   64  vi index.html
+   65  cat index.html
+   66  docker cp index.html R1:/usr/local/apache2/htdocs
+   67  docker cp index.html R2:/usr/local/apache2/htdocs
+   68  docker cp index.html R3:/usr/local/apache2/htdocs
