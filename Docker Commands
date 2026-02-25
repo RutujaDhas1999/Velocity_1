@@ -43,7 +43,7 @@ docker system prune -a -f
 
 
 
-ocker pull ubuntu
+Docker pull ubuntu
    23  docker ps -a
    24  docker run ubuntu
    25  docker ps -a
