@@ -1,0 +1,48 @@
+    2 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    3  sudo yum -y install terraform
+    4  clear
+    5  mkdir testterrform
+    6  cd testterrform/
+    7  touch main.tf
+    8  touch provider.tf
+    9  vi main.tf
+   10  vi provider.tf
+   11  terraform init
+   12  terraform validate
+   13  terraform plan
+   14  terraform apply
+   15  ls -ltra
+   16  vi main.tf
+   17  cd /mnt
+   18  ll
+   19  cat rutuja.html
+   20  cd ../
+   21  cd
+   22  cd testterrform/
+   23  vi main.tf
+   24  vi provider.tf
+   25  ls -ltra
+   26  vi provider.tf
+   27  terraform init
+   28  terraform validate
+   29  terraform plan
+   30  terraform apply
+   31  cd /mnt
+   32  ll
+   33  cat rutuja.html
+   34  cd ../
+   35  cd
+   36  cd testterrform/
+   37  ls -ltra
+   38  cat terraform.tfstate.backup
+   39  cat terraform.tfstate
+   40  cd ../
+   41  cd testterrform/
+   42  terraform destroy
+   43  ls -ltra
+   44  ls -ltr
+   45  cat terraform.tfstate
+   46  cat terraform.tfstate.backup
+   47  ll
+   48  ls -ltra
+   49  history
