@@ -250,3 +250,58 @@ Docker Network
    90  docker inspect R5
    91  vi index.html
    92  docker cp index.html R5:/usr/local/apache2/htdocs
+
+
+Day 5 Dockerfile {03/02/2026}
+
+vi Dockerfile ubuntu
+
+FROM ubuntu
+MAINTAINER rutuja
+RUN apt-get update -y && apt-get install git tree iputils-ping -y && mkdir -p /mnt/rutuja
+COPY index.html /mnt/rutuja
+WORKDIR /mnt/rutuja
+EXPOSE 90
+ENTRYPOINT  ["ping" ]
+CMD ["localhost"]
+
+vi Dockerfile httpd
+
+FROM httpd
+MAINTAINER rutuja
+RUN sed -i 's/Listen 80/Listen 90/' /usr/local/apache2/conf/httpd.conf
+COPY index.html /usr/local/apache2/htdocs
+EXPOSE 90
+
+Commands:- 
+
+       yum install docker -y
+       systemctl start docker
+   56  docker images
+   57  docker build -t myubuntu:1.0 .
+   58  vi Dockerfile
+   59  docker build -t myubuntu:1.0 .
+   60  vi index.html
+   61  docker build -t myubuntu:1.0 .
+   62  cd /mnt
+   63  ll
+   64  ls -ltra
+   65  mkdir rutuja
+   66  cd
+   67  rm -rf index.html
+   68  docker build -t myubuntu:1.0 .
+   69  cd /mnt
+   70  rm -rf rutuja/
+   71  clear
+   72  cd
+   73  vi Dockerfile
+   74  vi index.html
+   75  docker build -t myubuntu:1.0 .
+   76  docker images
+   83  vi Dockerfile
+   84  docker build -t myubuntufile:1.0 .
+   85  docker images
+   87  docker run -itd --name R2 myubuntufile:1.0 meet.google.com
+   88  docker exec -it R2
+   90  docker exec -it R2 bash
+ -------
