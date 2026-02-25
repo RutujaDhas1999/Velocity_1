@@ -1,4 +1,41 @@
-    2 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+Terraform Day_1(24_02-2026)
+
+1  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    2  sudo yum -y install terraform
+    4  terraform -v
+    5  clear
+    6  mkdir test
+    7  cd test
+    8  vi test.tf
+    9  cat test.tf
+   10  terraform init
+   11  vi test.tf
+   12  terraform init
+   14  ls -ltra
+   15  terraform validate
+   16  terraform plan
+   17  terraform apply
+   18  ls -ltra
+   19  cd
+   20  cd /mnt
+   21  ll
+   22  cd rohit
+   23  ll
+   24  cat test.html
+   25  cd
+   26  cd test
+   27  terraform show
+   29  terraform destroy
+   30  ll
+   31  rm -rf terraform.tfstate terraform.tfstate.backup
+   32  ll
+   33  rm -rf test.tf
+   34  ll
+   35  clear
+
+Terraform Day_2(25_02-2026)
+
+2 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
     3  sudo yum -y install terraform
     4  clear
     5  mkdir testterrform
