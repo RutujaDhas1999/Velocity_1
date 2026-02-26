@@ -1,6 +1,6 @@
 Terraform Day_1(24_02-2026)
 
-1  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    1  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
     2  sudo yum -y install terraform
     4  terraform -v
     5  clear
@@ -34,12 +34,12 @@ Terraform Day_1(24_02-2026)
    35  clear
 
 Terraform Day_2(25_02-2026)
-
-2 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    1 
+    2 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
     3  sudo yum -y install terraform
     4  clear
-    5  mkdir testterraform
-    6  cd testterraform/
+    5  mkdir test-terraform
+    6  cd test-terraform/
     7  touch main.tf
     8  touch provider.tf
     9  vi main.tf
@@ -55,7 +55,7 @@ Terraform Day_2(25_02-2026)
    19  cat rutuja.html
    20  cd ../
    21  cd
-   22  cd testterraform/
+   22  cd test-terraform/
    23  vi main.tf
    24  vi provider.tf
    25  ls -ltra
@@ -69,7 +69,7 @@ Terraform Day_2(25_02-2026)
    33  cat rutuja.html
    34  cd ../
    35  cd
-   36  cd testterraform/
+   36  cd test-terraform/
    37  ls -ltra
    38  cat terraform.tfstate.backup
    39  cat terraform.tfstate
@@ -81,6 +81,4 @@ Terraform Day_2(25_02-2026)
    45  terraform destroy --auto-approve
    45  cat terraform.tfstate
    46  cat terraform.tfstate.backup
-   47  ll
    48  ls -ltra
-   49  history
